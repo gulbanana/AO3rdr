@@ -143,13 +143,12 @@ function hideByTag(raw_html, metadata, matching_tags){
     newDiv.appendChild(button);
 
     var par = document.createElement("li");
-    var text = document.createTextNode("hidden for "+matching_tags.join(', '));
-    par.appendChild(text);
     newDiv.appendChild(par);
     // insert the placeholder element
     raw_html.appendChild(newDiv);
     // hide the article
     hide(newDiv); // Hide the sibilings of the new div
+    $(newDiv.parentElement).hide(); // gulbanana: hide the whole <li>
 }
 
 function updateImage(newArticle){
