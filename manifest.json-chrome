@@ -1,7 +1,7 @@
 {
-  "name": "AO3rdr",
+  "name": "AO3rdr but it blocks the whole fic",
   "description": "Rating system and block by tag system for Archive of Our Own",
-  "version": "1.8.1",
+  "version": "1.8.1-gulbanana",
   "permissions": [
     "activeTab",
     "storage",
